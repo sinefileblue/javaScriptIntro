@@ -1,0 +1,58 @@
+// A breakdown of the expression \`Number.parseInt(value); step-by-step:`\
+
+Number: This is a built-in object in JavaScript. It's used for numeric operations and conversions.
+
+parseInt: This is a function that is a property of the Number object. It is used to parse a string argument and returns an integer. It extracts an integer from the beginning of the string. If the string does not start with a valid integer, it returns NaN (Not a Number).
+
+(value): This is the argument passed to the parseInt function. It's a placeholder for the string that you want to parse into an integer. You would replace value with the actual string you want to parse.
+
+Putting it all together:
+
+Number.parseInt(value);: This line of code calls the parseInt function, which is a property of the Number object. It takes a string (value) as input, attempts to parse it as an integer, and returns the integer value. If the string cannot be parsed as an integer, it returns NaN.
+
+----------------------------------------------------------------
+
+// In case of NaN; the function \`parseInt(value)`\ may be called
+
+ is a built-in function in JavaScript used for parsing a string argument and converting it into an integer (a whole number). Here's the breakdown:
+
+Number: Number is a built-in object in JavaScript. It provides methods for working with numbers.
+
+parseInt: parseInt() is a method of the Number object. It is used to parse a string and extract an integer from it.
+
+Usage: Number.parseInt() is typically used when you have a string that represents an integer (e.g., "42")
+and you want to convert it into an actual integer value (42).
+It takes a string as input and returns an integer parsed from that string.
+
+    Example: 
+        let str = "42";
+        let num = Number.parseInt(str);
+        console.log(num); // Output: 42
+
+Radix Parameter (Optional): parseInt() also accepts an optional second parameter
+called the radix, which specifies the base of the numeral system to be used. 
+It can be an integer between 2 and 36. If omitted, parseInt() assumes base 10 unless
+the string begins with "0x" (indicating base 16) or "0" (indicating base 8).
+
+    Example:
+        let binaryStr = "1010";
+        let decimalNum = Number.parseInt(binaryStr, 2);
+        console.log(decimalNum); // Output: 10
+
+Return Value: If the first character of the string cannot be converted to a number, 
+parseInt() returns NaN (Not a Number). Otherwise, it returns the integer parsed from the string.
+
+Number.parseInt() is commonly used in JavaScript when dealing with
+user input, parsing data from APIs, or converting strings to integers for mathematical operations.
+
+----------------------------------------------------------------
+
+Triple equals operator, also written as \`===`\, is a comparison used in programming
+languages to compare equality of 2 values.
+
+
+
+
+
+
+
